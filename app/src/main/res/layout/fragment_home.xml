@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.android.base.views.container.home.HomeViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/tvTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="안드로이드 채찍피티 연동"
+      android:textSize="12dp"
+      android:textStyle="bold"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+      android:id="@+id/etRequest"
+      android:layout_width="200dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="100dp"
+
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:background="#00ccff"
+      android:gravity="center"
+      android:text="검색"
+      android:onClick="@{() -> viewModel.inputUserRequest()}"
+      android:textColor="#000000"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/etRequest"
+      app:layout_constraintLeft_toRightOf="@+id/etRequest"
+      app:layout_constraintTop_toTopOf="@+id/etRequest" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginTop="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etRequest" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
