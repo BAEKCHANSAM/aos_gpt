@@ -12,49 +12,66 @@
 
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
+    android:background="#EFEEEE"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatTextView
-      android:id="@+id/tvTitle"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="20dp"
-      android:text="안드로이드 채찍피티 연동"
-      android:textSize="12dp"
-      android:textStyle="bold"
+    <androidx.appcompat.widget.AppCompatImageView
+      android:layout_width="300dp"
+      android:layout_height="80dp"
+      android:layout_marginTop="50dp"
+      android:src="@drawable/olivestone_logo"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatEditText
-      android:id="@+id/etRequest"
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--      android:id="@+id/tvStartSpeech"-->
+<!--      android:layout_width="200dp"-->
+<!--      android:layout_height="200dp"-->
+<!--      android:background="#ffcc00"-->
+<!--      android:gravity="center"-->
+<!--      android:onClick="@{() -> viewModel.onClickSpeakStart()}"-->
+<!--      android:text="클릭해서 궁금한걸 물어보세요"-->
+<!--      android:textColor="#000000"-->
+<!--      android:textStyle="bold"-->
+<!--      app:layout_constraintBottom_toBottomOf="parent"-->
+<!--      app:layout_constraintLeft_toLeftOf="parent"-->
+<!--      app:layout_constraintRight_toRightOf="parent"-->
+<!--      app:layout_constraintTop_toTopOf="parent" />-->
+
+    <soup.neumorphism.NeumorphButton
+      android:id="@+id/nbBtn"
       android:layout_width="200dp"
-      android:layout_height="50dp"
-      android:layout_marginTop="100dp"
-
+      android:layout_height="200dp"
+      android:onClick="@{() -> viewModel.onClickSpeakStart()}"
+      app:neumorph_shadowElevation="3dp"
+      style="@style/Widget.Neumorph.Button"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+      app:layout_constraintRight_toRightOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatImageView
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:background="#00ccff"
-      android:gravity="center"
-      android:text="검색"
-      android:onClick="@{() -> viewModel.inputUserRequest()}"
-      android:textColor="#000000"
-      android:textStyle="bold"
-      app:layout_constraintBottom_toBottomOf="@+id/etRequest"
-      app:layout_constraintLeft_toRightOf="@+id/etRequest"
-      app:layout_constraintTop_toTopOf="@+id/etRequest" />
+      android:background="@drawable/mic"
+      app:layout_constraintBottom_toBottomOf="@+id/nbBtn"
+      app:layout_constraintTop_toTopOf="@+id/nbBtn"
+      app:layout_constraintLeft_toLeftOf="@+id/nbBtn"
+      app:layout_constraintRight_toRightOf="@+id/nbBtn"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-      android:layout_width="match_parent"
-      android:layout_height="0dp"
-      android:layout_marginTop="20dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="20dp"
+      android:layout_marginBottom="20dp"
+      android:text="by B.C.S"
+      android:fontFamily="sans-serif-medium"
+      android:textStyle="bold"
+      android:textColor="#000000"
+      android:textSize="12dp"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/etRequest" />
+      app:layout_constraintRight_toRightOf="parent" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 
