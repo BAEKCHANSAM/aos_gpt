@@ -15,14 +15,14 @@
     android:background="#EFEEEE"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatImageView
-      android:layout_width="300dp"
-      android:layout_height="80dp"
-      android:layout_marginTop="50dp"
-      android:src="@drawable/olivestone_logo"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--      android:layout_width="300dp"-->
+<!--      android:layout_height="80dp"-->
+<!--      android:layout_marginTop="50dp"-->
+<!--      android:src="@drawable/olivestone_logo"-->
+<!--      app:layout_constraintLeft_toLeftOf="parent"-->
+<!--      app:layout_constraintRight_toRightOf="parent"-->
+<!--      app:layout_constraintTop_toTopOf="parent" />-->
 
 <!--    <androidx.appcompat.widget.AppCompatTextView-->
 <!--      android:id="@+id/tvStartSpeech"-->
@@ -60,18 +60,18 @@
       app:layout_constraintLeft_toLeftOf="@+id/nbBtn"
       app:layout_constraintRight_toRightOf="@+id/nbBtn"/>
 
-    <androidx.appcompat.widget.AppCompatTextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginRight="20dp"
-      android:layout_marginBottom="20dp"
-      android:text="by B.C.S"
-      android:fontFamily="sans-serif-medium"
-      android:textStyle="bold"
-      android:textColor="#000000"
-      android:textSize="12dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintRight_toRightOf="parent" />
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_marginRight="20dp"-->
+<!--      android:layout_marginBottom="20dp"-->
+<!--      android:text="by B.C.S"-->
+<!--      android:fontFamily="sans-serif-medium"-->
+<!--      android:textStyle="bold"-->
+<!--      android:textColor="#000000"-->
+<!--      android:textSize="12dp"-->
+<!--      app:layout_constraintBottom_toBottomOf="parent"-->
+<!--      app:layout_constraintRight_toRightOf="parent" />-->
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 
