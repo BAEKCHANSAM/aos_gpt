@@ -83,10 +83,13 @@ dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
 
     //api
-    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation("com.aallam.openai:openai-client:3.0.0")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
-    implementation("com.aallam.openai:openai-client:3.0.0")
-    implementation("io.ktor:ktor-client-android:2.2.4")
+
+    //Neumorphism
+    implementation("com.github.fornewid:neumorphism:0.3.2")
+
 }
